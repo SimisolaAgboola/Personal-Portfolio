@@ -51,30 +51,9 @@ img{
 strong{
     font-weight: var(--fw-bold);
     text-transform: uppercase;
-    background-image: linear-gradient(
-      -225deg,
-      #231557 0%,
-      #44107a 29%,
-      #ff1361 67%,
-      #fff800 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-        font-size: 190px;
+    font-family: Montserrat, sans-serif;
 }
-@keyframes textclip {
-    to {
-      background-position: 200% center;
-    }
-  }
+
  
 :focus{
     outline: 3px solid var(--clr-accent);
@@ -102,6 +81,22 @@ strong{
 
 /* Typography */
 
+h2{
+    display: inline-block;
+    font-size: 1.2em;
+    text-align: center;
+    color: #f6d4b1;
+    background-color: var(--clr-accent);
+    /*font-family: "public-pixel", monospace;*/
+    padding: 16px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    margin: auto;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    font-family: 'Moirai One', cursive;
+}
+
 h1,
 h2,
 h3{
@@ -111,7 +106,9 @@ h3{
 h1{ font-size: var(--fs-h1) }
 h2{ font-size: var(--fs-h2) }
 h3{ font-size: var(--fs-h3) } 
-
+.name{
+    font-size: 200px;
+}
 .section__title{
   margin-top: 0;
 }
@@ -221,13 +218,13 @@ h3{ font-size: var(--fs-h3) }
     align-items: center;
     width: 100%;
     height: 90vh;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background: var(--clr-light);
 }
 
 /* Inro section */
 .intro{
     position: relative;
-    background: var(--clr-light);
+    /*background: var(--clr-light);*/
 }
 
 .section__subtitle--intro{
@@ -256,62 +253,16 @@ h3{ font-size: var(--fs-h3) }
         width: calc(100% + 1.5em);
     }
 }
+ 
 
-/* My services section */
-.my-services{
-    background-color: var(--clr-dark);
-    background-image: url(../img/whatdoIdobgpic.jpg);
-    background-size: cover; /*so image does not repeat itself */
-    background-blend-mode: multiply;
-    color: var(--clr-light);
-    text-align: center;
-}
-.section__title--services{
-    color: var(--clr-accent);
-    position: relative;
-}
-
-.section__title--services::after{ /*line under title */
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25;
-}
-
-.services{
-    margin-bottom: 4em;
-}
-
-.service{
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-@media (min-width: 800px){
-    .services{
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .services + .service{ /* 2 services beside each other */
-        margin-left: 2em;
-    }
-} 
 
 .about-me{
-    max-width: 1000px;
     margin: 0 auto;
     height: 90vh;
     background: var(--clr-light);
     
 }
-.about-me__img{
-    box-shadow: var(--bs);
-}
+
 @media (min-width: 600px){
     .about-me{
         display: grid;
@@ -335,17 +286,12 @@ h3{ font-size: var(--fs-h3) }
         padding-left: 1em;
         padding-right: calc(200px + 4em);
     }
-    .about-me__img{
-        grid-area: img;
-        position: relative; 
-    }
 }
 
 /* My Work */
 .my-work{
-    background: var(--clr-dark);
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-    color: var(--clr-light);
+    background: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
     padding: 10rem 2rem;
     
@@ -361,7 +307,7 @@ h3{ font-size: var(--fs-h3) }
     
 }
 .portfolio__item{
-    background: var(--clr-accent);
+    background: gray;
     overflow: hidden;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
