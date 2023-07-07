@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Domine&family=Inconsolata:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Domine&family=Inconsolata:wght@300&family=Moirai+One&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/0cbeb7b28e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <!-- Stylesheet-->
         <link rel="stylesheet" href="style.css">
     </head>
@@ -25,80 +26,203 @@
             <nav class="nav" id="nav">
                 <ul class="nav__list"> <!--double underscore is optional but helps to show it spart of something bigger-->
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My work</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Qualifications</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Service</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- Introduction-->
+        <!--Home-->
         <section class="intro" id="home">  <!-- id used because it links to the home page-->
-            <h2 class="name">Simisola</h2>
-            <p class="section__subtitle">software developer</p>                                                                                                                      
+            <h3 class="name">Hi, <br> I'm Simisola, <br></h3>
+            <p class="intro__subtitle">software developer</p>                                                                                                                      
         </section>  
 
         <!--About Me-->
         <section class="about-me" id="about">
-            <h2>About Me</h2>
-            <div class="about-me__body">
-                <p>My name is Simisola. I am a full stack developer with a bachelors degree in Computer Engineering from Texas A&M University.
-                    I have experience with front end design using html & CSS as well as ..., ... & ... front-end libraries. I also have back-end experience using sql, nodeJS, python.
-                </p>
-                <p></p>
+            <div class="wrapper">
+                <div class="heading">About</div>
+                <div class="about-me__body">
+                    <div class="profile-img">
+                        <img src="assets/img/simi'spic3.jpg" alt="Headshot of Simisola Agboola">
+                    </div>
+                    <div class="profile-text">
+                        <h4>Learn about who I am and what I do</h4>
+                        <p>My name is Simisola. I am a software developer with a bachelors degree in Computer Engineering from Texas A&M University.</p>
+                        <p>My interests are full stack development, AI & Machine learning and UI/UX design focusing on web accessibility.</p>
+                        <p>Aside from coding, I enjoy making pinterest boards, dancing and running in my free time.</p>
+                        <p>I am always working towards being a better team member and I particularly enjoyed reading the 5 Dysfunctions of a team by Patrick Lencioni.</p>
+                        <p>I am currently seeking roles as a software developer, front end or full stack developer in an environment that will enable me further my passions.</p>
+                        <a href="assets/img/Simisola's Resume.pdf">
+                            <i class="fa-sharp fa-regular fa-folder-user" style="font-size:60px"></i>
+                        </a>    
+                    </div>
+                </div>
             </div>
-         </section>
+        </section>
+
+         <!--Skills & Technologies-->
+        <section class="skills" id="skills">
+            <div class="wrapper">
+                <div class="heading">Skills & Tools</div>
+                <h3>My tools & things I can do</h3>
+                <p>The skills & my certifications: </p>
+                <div class="container-icons">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-html5" style="font-size:60px"></i>
+                        <p>html</p>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-css3-alt" style="font-size:60px"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-react" style="font-size:60px"></i>
+                        <p>React</p>   
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-database" style="font-size:60px"></i>
+                        <p>SQL</p>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-python" style="font-size:60px"></i>
+                        <p>Python</p>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-java" style="font-size:60px"></i>
+                        <p>Java</p>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fab fa-github" style="font-size:60px"></i>
+                        <p>Github</p>
+                    </div>
+                </div>
+                <p>Currently working on: </p>
+                <div class="certifications">
+                    <div class="cert-icon">
+                        <i class="fa-brands fa-google" style="font-size: 60px"></i>
+                        <p>Google Data Analytics Certificate</p>
+                    </div>
+                    <div class="cert-icon">
+                        <img src="assets/img/Harvard_.jpg" alt="Headshot of Simisola Agboola">
+                        <p>Havard CS50</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+         <!--Service-->
+        <section class="services" id="service">
+            <div class="wrapper">
+                <div class="heading">Service & Volunteering</div>
+                <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="fa fa-code"></i></div>
+                        <div class="title">Web Development</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="fa fa-mobile"></i></div>
+                        <div class="title">App Development</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="fa fa-paint-brush"></i></div>
+                        <div class="title">Web Design </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="fa fa-laptop"></i></div>
+                        <div class="title">Responsive Design </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="fa fa-line-chart"></i></div>
+                        <div class="title">Advertising </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="fa fa-wordpress"></i></div>
+                        <div class="title">Wordpress</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                    </div>
+                </div>
+            </div>            
+        </section>
+      
 
         <!--My Work-->
-        <section class="my-work" id="work">  
-            <h2 class="heading">A selection of my work</h2>
+        <section class="my-work" id="work">
+            <div class="wrapper">
+                <div class="heading">Projects</div>
             <div class="portfolio">
                 <!-- Portfolio item 01-->
                 <a href="portfolio-item.html#project1" class="portfolio__item">
                     <img src="assets/img/tictactoepic2.jpg" alt="this is an image" class="portfolio__img">
-                    <span>Tic Tac Toe</span>
+                    <p>Tic Tac Toe</p>
                 </a>
                 <!-- Portfolio item 02-->
                 <a href="portfolio-item.html#project2" class="portfolio__item">
                     <img src="assets/img/resumeparserpic1.jpg" alt="this is an image" class="portfolio__img">
-                    <span>Resume Parser</span>
+                    <p>Resume Parser</p>
                 </a>
                 <!-- Portfolio item 03-->
                 <a href="portfolio-item.html#project3" class="portfolio__item">
                     <img src="assets/img/fullstacksitepic2.jpg" alt="this is an image" class="portfolio__img">
-                    <span>Full Stack Shopping Site</span>
+                    <p>Full Stack Shopping Site</p>
                 </a>
                 <!-- Portfolio item 04-->
                 <a href="portfolio-item.html#project4" class="portfolio__item">
                     <img src="assets/img/shellpic1.jpg" alt="this is an image" class="portfolio__img">
-                    <span>Linux Shell</span>
+                    <p>Linux Shell</p>
                 </a>
                 <!-- Portfolio item 05-->
                 <a href="portfolio-item.html#project5" class="portfolio__item">
                     <img src="assets/img/capstonepic1.jpg" alt="this is an image" class="portfolio__img">
-                    <span>Senior Capstone</span>
+                    <p>Senior Capstone</p>
                 </a>
                 <!-- Portfolio item 06-->
                 <a href="portfolio-item.html#project6" class="portfolio__item">
                     <img src="assets/img/quppic1.jpg" alt="this is an image" class="portfolio__img">
-                    <span>Q-up</span>
+                    <p>Q-up</p>
                 </a>    
             </div>
+            </div>  
         </section>
         
         <!--Footer-->
         <footer class="footer">
-            <h2 class="heading">Contact Me</h2>
-            <a href=mailto:simisola_1@tamu.edu class="footer-link">simisola_1@tamu.edu</a>
+            <h2>Contact Me</h2>
             <ul class="social-list">
                 <li class="social-list__item">
+                    <a class="social-list__link" href=mailto:simisola_1@tamu.edu>
+                        <i class="fa-solid fa-envelope" style="font-size:60px"></i>
+                        <p class="contact-title">email me</p>
+                    </a>
+                </li>
+                <li class="social-list__item">
                     <a class="social-list__link" href="https://www.linkedin.com/in/simisola-agboola/">
-                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-linkedin" style="font-size:60px"></i>
+                        <p class="contact-title">linkedin</p>
                     </a>
                 </li>
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://github.com/SimisolaAgboola?tab=repositories">
-                        <i class="fab fa-github"></i>
+                        <i class="fab fa-github" style="font-size:60px"></i>
+                        <p class="contact-title">github</p>
                     </a>
                 </li>
             </ul>
