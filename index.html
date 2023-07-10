@@ -26,17 +26,17 @@
             <nav class="nav" id="nav">
                 <ul class="nav__list"> <!--double underscore is optional but helps to show it spart of something bigger-->
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">Qualifications</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Service</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#service" class="nav__link">Service</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
                 </ul>
             </nav>
         </header>
 
         <!--Home-->
         <section class="intro" id="home">  <!-- id used because it links to the home page-->
-            <h3 class="name">Hi, <br> I'm Simisola, <br></h3>
+            <h3 class="name">Hi, <br> I'm Simisola,&#128512;<br></h3>
             <p class="intro__subtitle">software developer</p>                                                                                                                      
         </section>  
 
@@ -53,7 +53,7 @@
                         <p>My name is Simisola. I am a software developer with a bachelors degree in Computer Engineering from Texas A&M University.</p>
                         <p>My interests are full stack development, AI & Machine learning and UI/UX design focusing on web accessibility.</p>
                         <p>Aside from coding, I enjoy making pinterest boards, dancing and running in my free time.</p>
-                        <p>I am always working towards being a better team member and I particularly enjoyed reading the 5 Dysfunctions of a team by Patrick Lencioni.</p>
+                        <p>I am always working towards being a better team member and I particularly enjoyed reading the <a href="https://www.mindtools.com/a6ooqev/lencionis-five-dysfunctions-of-a-team">5 Dysfunctions of a team by Patrick Lencioni.</a></p>
                         <p>I am currently seeking roles as a software developer, front end or full stack developer in an environment that will enable me further my passions.</p>
                         <a href="assets/img/Simisola's Resume.pdf">
                             <i class="fa-sharp fa-regular fa-folder-user" style="font-size:60px"></i>
@@ -68,7 +68,7 @@
             <div class="wrapper">
                 <div class="heading">Skills & Tools</div>
                 <h3>My tools & things I can do</h3>
-                <p>The skills & my certifications: </p>
+                <p>Here are the tools and skills I use to bring my projects to life: </p>
                 <div class="container-icons">
                     <div class="skill-icon">
                         <i class="fa-brands fa-html5" style="font-size:60px"></i>
@@ -117,49 +117,25 @@
          <!--Service-->
         <section class="services" id="service">
             <div class="wrapper">
-                <div class="heading">Service & Volunteering</div>
-                <div class="card">
-                    <div class="content">
-                        <div class="icon"><i class="fa fa-code"></i></div>
-                        <div class="title">Web Development</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                <div class="service_section">
+                    <div class="heading">Service & Volunteering</div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="title"><a href="https://www.vigilantheartsociety.org">Vigilante Heart Charitable Society</a></div>
+                            <p>I served 100+ hours at Vigilante Heart Charitable Society orphanage helping out with various tasks, mostly teaching children math & science.</p>
+                            <p>I also helped clean their home every Thursday with other volunteers.</p>
+                            <p>I also played differnet sports with them such as badminton and football. We had a lot of fun and I got to interact with kids of different ages from toddlers to teenagers.</p>
+                            <p>Other things I did during my time there were host games such as debate sessions among the children and I thoroughly enjoyed my time there.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="icon"><i class="fa fa-mobile"></i></div>
-                        <div class="title">App Development</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="icon"><i class="fa fa-paint-brush"></i></div>
-                        <div class="title">Web Design </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="icon"><i class="fa fa-laptop"></i></div>
-                        <div class="title">Responsive Design </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="icon"><i class="fa fa-line-chart"></i></div>
-                        <div class="title">Advertising </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <div class="icon"><i class="fa fa-wordpress"></i></div>
-                        <div class="title">Wordpress</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
-                    </div>
-                </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="title"><a href="https://engineering.tamu.edu/student-life/we/index.html">Women in Engineering Volunteering</a></div>
+                            <p>I spoke on a panel in San Antonio to incoming female freshmen on advice and best practices in navigating engineering based on my personal experience.</p>
+                            <p>I also coached high school juniors & seniors looking to study engineering at Texas A&M's women in engineering outreach event.</p>
+                        </div>
+                    </div> 
+                </div>          
             </div>            
         </section>
       
@@ -168,39 +144,41 @@
         <section class="my-work" id="work">
             <div class="wrapper">
                 <div class="heading">Projects</div>
-            <div class="portfolio">
-                <!-- Portfolio item 01-->
-                <a href="portfolio-item.html#project1" class="portfolio__item">
-                    <img src="assets/img/tictactoepic2.jpg" alt="this is an image" class="portfolio__img">
-                    <p>Tic Tac Toe</p>
-                </a>
-                <!-- Portfolio item 02-->
-                <a href="portfolio-item.html#project2" class="portfolio__item">
-                    <img src="assets/img/resumeparserpic1.jpg" alt="this is an image" class="portfolio__img">
-                    <p>Resume Parser</p>
-                </a>
-                <!-- Portfolio item 03-->
-                <a href="portfolio-item.html#project3" class="portfolio__item">
-                    <img src="assets/img/fullstacksitepic2.jpg" alt="this is an image" class="portfolio__img">
-                    <p>Full Stack Shopping Site</p>
-                </a>
-                <!-- Portfolio item 04-->
-                <a href="portfolio-item.html#project4" class="portfolio__item">
-                    <img src="assets/img/shellpic1.jpg" alt="this is an image" class="portfolio__img">
-                    <p>Linux Shell</p>
-                </a>
-                <!-- Portfolio item 05-->
-                <a href="portfolio-item.html#project5" class="portfolio__item">
-                    <img src="assets/img/capstonepic1.jpg" alt="this is an image" class="portfolio__img">
-                    <p>Senior Capstone</p>
-                </a>
-                <!-- Portfolio item 06-->
-                <a href="portfolio-item.html#project6" class="portfolio__item">
-                    <img src="assets/img/quppic1.jpg" alt="this is an image" class="portfolio__img">
-                    <p>Q-up</p>
-                </a>    
-            </div>
-            </div>  
+                <h3>Here are some of my works over the years.</h3>
+                <div class="card-section">
+                    <div class="card_port">
+                      <img src="assets/img/shellpic1.jpg" alt="Image 1">
+                      <h3 class="card-title">Linux Shell</h3>
+                      <a class="card-link" href="#">See More</a>
+                    </div>
+                    <div class="card_port">
+                      <img src="assets/img/tictactoepic2.jpg" alt="Image 2">
+                      <h3 class="card-title">Tic Tac Toe</h3>
+                      <a class="card-link" href="#">See More</a>
+                    </div>
+                    <div class="card_port">
+                      <img src="assets/img/fullstacksitepic2.jpg" alt="Image 3">
+                      <h3 class="card-title">E-Commerce Site</h3>
+                      <a class="card-link" href="#">See More</a>
+                    </div>
+                    <div class="card_port">
+                      <img src="assets/img/resumeparserpic1.jpg" alt="Image 4">
+                      <h3 class="card-title">Resume Parser</h3>
+                      <a class="card-link" href="#">See More</a>
+                    </div>
+                    <div class="card_port">
+                      <img src="assets/img/quppic1.jpg" alt="Image 5">
+                      <h3 class="card-title">Q-up</h3>
+                      <a class="card-link" href="#">See More</a>
+                    </div>
+                    <div class="card_port">
+                      <img src="assets/img/capstonepic1.jpg" alt="Image 6">
+                      <h3 class="card-title">Capstone Project</h3>
+                      <a class="card-link" href="#">See More</a>
+                    </div>
+                </div>
+                <button class="projects_button"><a href="#">View all Projects</a></button>
+            </div> 
         </section>
         
         <!--Footer-->
