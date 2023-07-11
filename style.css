@@ -127,6 +127,16 @@ h3{ font-size: var(--fs-h3) }
     padding: 1.5rem;
 }
 
+p{
+    line-height: 1.55;
+    font-size: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 /* header */
 .nav{
     position: fixed;
@@ -226,8 +236,8 @@ h3{ font-size: var(--fs-h3) }
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-light);
+    color: var(--clr-dark);
 }
 
 .name{
@@ -387,17 +397,26 @@ h3{ font-size: var(--fs-h3) }
     color: blue;
 }
 
-.projects_button{
-    padding: 10px 20px;
-    background-color: purple;
+.projects_button{ 
     display: flex;
     justify-content: center;
-    color: white;
-    font-size: 16px;
-    border: none;
     cursor: pointer;
-    border-radius: 4px;
     margin: auto;
+    background-color: aquamarine;
+    position: relative;
+    padding: .5rem 1.5rem 1rem;
+    border: none;
+    transition: all 300ms ease-out;
+}
+.projects_button a{
+    color: var(--clr-dark);
+    text-decoration: none;
+    letter-spacing: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: capitalize;
+    font-family: "Crimson Text", serif;
 }
 
 
@@ -449,6 +468,64 @@ opacity: .7;
     font-size: 30px;
     padding: 0 1em;
 }
+
+/* Portfolio Page */
+.portfolio-item{
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    padding: 10rem 2rem;
+    height: 100%;
+}
+.container-work{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4.2rem;
+}
+
+@media (min-width: 700px){
+    .container-img{
+        width: 55%;
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 700px){
+    .container-text{
+        order: -1;
+        padding-left: 0;
+        width: 45%;
+    }
+}
+
+.project-tools{
+    margin-bottom: 1.5rem;
+}
+
+.btn-view-work{
+    margin-bottom: 7px;
+    background-color: aquamarine;
+    position: relative;
+    display: inline-block;
+    padding: .5rem 1.5rem 1rem;
+    border: none;
+    margin-right: 5px;
+    transition: all 300ms ease-out;
+}
+
+.btn-view-work a{
+    color: var(--clr-dark);
+    text-decoration: none;
+    letter-spacing: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: capitalize;
+    font-family: "Crimson Text", serif;
+}
+
 
 
 
