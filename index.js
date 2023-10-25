@@ -12,40 +12,47 @@ navLinks.forEach(link => {
     })
 });
 
+document.getElementById(".nav-toggle").addEventListener("click", function() {
+  document.body.classList.toggle("background-changed");
+});
 
-    // JavaScript code for horizontal scrolling
-    const cardSection = document.querySelector('.card-section');
-    const cards = document.querySelectorAll('.card_port');
-    const scrollSpeed = 2;
 
-    let scrollPos = 0;
+// JavaScript code for horizontal scrolling
+const cardSection = document.querySelector('.card-section');
+const cards = document.querySelectorAll('.card_port');
+const scrollSpeed = 2;
 
-    function scrollRight() {
-      scrollPos += scrollSpeed;
-      cardSection.scrollTo(scrollPos, 0);
-      if (scrollPos < cardSection.scrollWidth - cardSection.clientWidth) {
-        requestAnimationFrame(scrollRight);
-      }
-    }
+let scrollPos = 0;
 
-    function scrollLeft() {
-      scrollPos -= scrollSpeed;
-      cardSection.scrollTo(scrollPos, 0);
-      if (scrollPos > 0) {
-        requestAnimationFrame(scrollLeft);
-      }
-    }
+function scrollRight() {
+  scrollPos += scrollSpeed;
+  cardSection.scrollTo(scrollPos, 0);
+  if (scrollPos < cardSection.scrollWidth - cardSection.clientWidth) {
+    requestAnimationFrame(scrollRight);
+  }
+}
 
-    cardSection.addEventListener('mouseenter', () => {
-      cancelAnimationFrame(scrollRight);
-      cancelAnimationFrame(scrollLeft);
-    });
+function scrollLeft() {
+  scrollPos -= scrollSpeed;
+  cardSection.scrollTo(scrollPos, 0);
+  if (scrollPos > 0) {
+    requestAnimationFrame(scrollLeft);
+  }
+}
 
-    cardSection.addEventListener('mouseleave', () => {
-      if (scrollPos < cardSection.scrollWidth - cardSection.clientWidth) {
-        requestAnimationFrame(scrollRight);
-      }
-    });
+cardSection.addEventListener('mouseenter', () => {
+  cancelAnimationFrame(scrollRight);
+  cancelAnimationFrame(scrollLeft);
+});
+    
+cardSection.addEventListener('mouseleave', () => {
+  if (scrollPos < cardSection.scrollWidth - cardSection.clientWidth) {
+    requestAnimationFrame(scrollRight);
+  }
+});
 
-    scrollRight();
+scrollRight();
+    
+
+    
 

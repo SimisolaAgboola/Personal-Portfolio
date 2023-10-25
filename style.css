@@ -31,6 +31,7 @@
     }
 }
 
+
 /*General styles*/
 html{
     scroll-behavior: smooth;
@@ -43,6 +44,11 @@ body{
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+}
+
+body.background-changed {
+    background-color: purple;
+    transition: background-color 0.3s;
 }
 
 section{
@@ -58,25 +64,6 @@ a{
     width: 100%;
     margin: 0 auto;
     padding: 0 8%;
-}
-
-/*Work section needs to be longer*/
-#work{
-    height: 120vh;
-}
-
-img{
-    display: block; /* avoids common issues */
-    max-width: 100%; /* so images don't grow too big */
-    min-width: 100%;
-    border: 0;
-
-}
-
-a:hover{
-    color: chocolate;
-    transform: scale(1.07);
-    transition: 0.3s;
 }
  
 /* Buttons */
@@ -173,7 +160,7 @@ p{
     color: var(--clr-accent);
 }
 .nav-toggle {
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     z-index: 1000;
     padding: .5em;
@@ -193,7 +180,9 @@ p{
 }
  
 .change .nav{
-    transform: translateX(60%);
+    transform: translateX(0%);
+    background-color: pink;
+    
 }
 
 .change .bar1 {
@@ -343,7 +332,6 @@ p{
     }
 }
 
-
 .title > a{
     padding: 5px 0;
     font-size: 24px;
@@ -357,7 +345,25 @@ p{
     transition: 0.3s;
 }
 
-/* My Work */
+/*Work section*/
+#work{
+    height: 120vh;
+}
+
+img{
+    display: block; /* avoids common issues */
+    max-width: 100%; /* so images don't grow too big */
+    min-width: 100%;
+    border: 0;
+
+}
+
+a:hover{
+    color: chocolate;
+    transform: scale(1.07);
+    transition: 0.3s;
+}
+
 .my-work{
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -408,6 +414,7 @@ p{
     border: none;
     transition: all 300ms ease-out;
 }
+
 .projects_button a{
     color: var(--clr-dark);
     text-decoration: none;
@@ -418,8 +425,6 @@ p{
     text-transform: capitalize;
     font-family: "Crimson Text", serif;
 }
-
-
 
 /* footer */
 .footer{
@@ -476,6 +481,7 @@ opacity: .7;
     padding: 10rem 2rem;
     height: 100%;
 }
+
 .container-work{
     display: flex;
     flex-direction: row;
