@@ -1,0 +1,39 @@
+/* nav & header
+div boxes should automatically flex
+images
+skills section
+footer */
+@media (min-width: 800px){
+    :root{
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 2.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+@media (max-width: 600px) {
+    .card {
+      padding: 5px 5px;
+      margin-bottom: 5px;
+    }
+}
+@media (min-width: 700px){
+    .container-img{
+        width: 55%;
+        padding-top: 30px;
+    }
+}
+@media (min-width: 700px){
+    .container-text{
+        order: -1;
+        padding-left: 0;
+        width: 45%;
+    }
+}
+@media (max-width: 600px) {
+    footer {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+
