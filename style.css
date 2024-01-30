@@ -37,11 +37,6 @@ body{
     line-height: 1.6;
 }
 
-body.background-changed {
-    background-color: purple;
-    transition: background-color 0.3s;
-}
-
 section{
     height: 100vh;
 }
@@ -196,19 +191,6 @@ p{
     position: relative;
 }
 
-@media (min-width: 600px) {
-    .intro {
-        display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas: 
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
-    }
-}
-
 #home{
     display: flex;
     flex-direction: column;
@@ -257,79 +239,7 @@ p{
     padding-left: 5%;
     width: 70%;
 }
-
-/* Skills Section */
-.skills{
-    background: var(--clr-light);
-    color: var(--clr-dark);
-    padding: 10rem 2rem;
-    height: 120vh;   
-}
-.container-icons{
-    text-align: center;
-    margin-bottom: 3rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.skill-icon{
-    width: 12.5%;
-    height: 142px;
-    margin-bottom: 10px;
-}
-
-.certifications{
-    text-align: center;
-    margin-bottom: 3rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.cert-icon{
-    width: 12.5%;
-    height: 142px;
-    margin-bottom: 10px;
-    margin-right: 80px; 
-}
-
-
-/* Service Section */
-.services{
-    background: var(--clr-light);
-    color: var(--clr-dark);
-    padding: 5rem 2rem;
-    background-image: url("assets/img/pexels-evie-shaffer-3825880.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 120vh;
-}
-
-.card{
-    width: 100%;
-    text-align: center;
-    background: #222;
-    color: white;
-    padding: 20px 15px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.title > a{
-    padding: 5px 0;
-    font-size: 24px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.title >a:hover{
-    color: chocolate;
-    transform: scale(1.07);
-    transition: 0.3s;
-}
-
+ 
 /*Work section*/
 #work{
     height: 120vh;
