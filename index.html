@@ -1,136 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale="1.0">
-        <title>Simi's website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> <!--normalixe, helps even out differences between browsers-->
-        <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAKLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> <!--fonts from cdn.js-->
-        <!-- Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Domine&family=Inconsolata:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Domine&family=Inconsolata:wght@300&family=Moirai+One&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/0cbeb7b28e.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <!-- Stylesheet-->
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="mediaqueries.css">
-    </head>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <div class="header">
+      <h1>SA Simisola Agboola</h1>
+    </div>
 
-    <body>
-        <header>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </button>
-            <nav class="nav" id="nav">
-                <ul class="nav__list"> <!--double underscore is optional but helps to show it spart of something bigger-->
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#service" class="nav__link">Service</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                </ul>
-            </nav>
-        </header>
+    <div class="content">
+      <div class="menu">
+        <h2>Projects</h2>
+        <a href="https://github.com/SimisolaAgboola/C-Linux-Shell">Linux Shell</a>
+        <a href="https://tshirt-ecommerce-site.onrender.com/products">Ecommerce Site</a>
+        <a href="https://simisolaagboola.github.io/TicTacToe/">Tic Tac Toe</a>
+        <a href="https://github.tamu.edu/abhishekmore/q-up">Q-up</a>
+        <h3>In Progress</h3>
+        <a href="#">Google Chrome Reading Extension</a>
+        <a href="https://github.com/SimisolaAgboola/resume-parser">Resume Parser</a>
+        <a href="https://github.com/SimisolaAgboola/DinnerTableTalkApp">DinnerTableTalk News ApI</a>
+      </div>
 
-        <!--Home-->
-        <section class="intro" id="home">  <!-- id used because it links to the home page-->
-            <h3 class="name">Hi, <br> I'm Simisola,&#128512;<br></h3>
-            <p class="intro__subtitle">software developer</p>                                                                                                                      
-        </section>  
+      <div class="main">
+        <div class="profile-img">
+          <img src="assets/img/simi'spic3.jpg" alt="Headshot of Simisola Agboola">
+        </div>
+        <h2>Hi, I'm a software developer</h2>
+        <p>I'm passionate about big data and full stack development. I enjoy improving systems and automating processes.</p>
+        <div class="icon-bar">
+          <a href="https://github.com/SimisolaAgboola?tab=repositories" class="github"><i class="fab fa-github" style="font-size:40px"></i></a>
+          <a href="https://www.linkedin.com/in/simisola-agboola/" class="linkedin"><i class="fa-brands fa-linkedin" style="font-size:40px"></i></i></a>
+        </div>
+        <button>Resume</button>
+      </div>
 
-        <!--About-->
-        <section class="about-me" id="about">
-            <div class="wrapper">
-                <div class="heading">About</div>
-                <div class="about-me__body">
-                    <div class="profile-img">
-                        <img src="assets/img/simi'spic3.jpg" alt="Headshot of Simisola Agboola">
-                    </div>
-                    <div class="profile-text">
-                        <h4>Learn about who I am and what I do</h4>
-                        <p>My name is Simisola. I am a software developer with a bachelors degree in Computer Engineering from Texas A&M University.</p>
-                        <p>My interests are full stack development, AI & Machine learning and data analysis.</p>
-                        <p>Aside from coding, I enjoy making pinterest boards, dancing and running in my free time.</p>
-                        <p>I am always working towards being a better team member and I particularly enjoyed reading the <a href="https://www.mindtools.com/a6ooqev/lencionis-five-dysfunctions-of-a-team">5 Dysfunctions of a team by Patrick Lencioni.</a></p>
-                        <p>I am currently seeking roles as a software developer, front end or full stack developer in an environment that will enable me further my passions.</p>
-                        <a href="assets/img/Simisola's Resume.pdf">
-                            <i class="fa-sharp fa-regular fa-folder-user" style="font-size:60px"></i>
-                        </a>    
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="right">
+        <h2>About</h2>
+        <p>My name is Simisola. I am a software developer with a bachelors degree in Computer Engineering from Texas A&M University.</p>
+        <p>My interests are full stack development, AI & Machine learning and data analysis.</p>
+        <p>Aside from coding, I enjoy making pinterest boards, dancing and running in my free time.</p>
+        <p>I am always working towards being a better team member and I particularly enjoyed reading the <a href="https://www.mindtools.com/a6ooqev/lencionis-five-dysfunctions-of-a-team">5 Dysfunctions of a team by Patrick Lencioni.</a></p>
+        <p>I am currently seeking roles as a software developer, front end or full stack developer in an environment that will enable me further my passions.</p>
+        <h4>Skills Summary</h4>
+        <div class="skills">
+          <div class="skill-tag">HTML</div>
+          <div class="skill-tag">CSS</div>
+          <div class="skill-tag">JavaScript</div>
+          <div class="skill-tag">Node.js</div>
+          <div class="skill-tag">React</div>
+          <div class="skill-tag">Python</div>
+          <div class="skill-tag">SQL</div>
+        </div>
+        <div class="career-highlights">
+            <span><i class="fa-regular fa-star"></i>Full stack web developer</span>
+            <span><i class="fa-regular fa-star"></i>data analyst</span>
+            <span><i class="fa-regular fa-star"></i>front end designner & developer</span>
+        </div> 
+      </div>
+    </div>
 
-        <!--My Work-->
-        <section class="my-work" id="work">
-            <div class="wrapper">
-                <div class="heading">Projects</div>
-                <h3>Here are some of my works over the years.</h3>
-                <div class="card-section">
-                    <div class="card_port">
-                      <img src="assets/img/shellpic1.jpg" alt="Image 1">
-                      <h3 class="card-title">Linux Shell</h3>
-                      <a class="card-link" href="portfolio-item.html#project1">See More</a>
-                    </div>
-                    <div class="card_port">
-                      <img src="assets/img/tictactoepic3.png" alt="Image 2">
-                      <h3 class="card-title">Tic Tac Toe</h3>
-                      <a class="card-link" href="portfolio-item.html#project4">See More</a>
-                    </div>
-                    <div class="card_port">
-                      <img src="assets/img/fullstacksitepic3.png" alt="Image 3">
-                      <h3 class="card-title">E-Commerce Site</h3>
-                      <a class="card-link" href="portfolio-item.html#project2">See More</a>
-                    </div>
-                    <div class="card_port">
-                      <img src="assets/img/resumeparserpic1.jpg" alt="Image 4">
-                      <h3 class="card-title">Resume Parser</h3>
-                      <a class="card-link" href="portfolio-item.html#project3">See More</a>
-                    </div>
-                    <div class="card_port">
-                      <img src="assets/img/quppic1.jpg" alt="Image 5">
-                      <h3 class="card-title">Q-up</h3>
-                      <a class="card-link" href="portfolio-item.html#project5">See More</a>
-                    </div>
-                    <div class="card_port">
-                      <img src="assets/img/capstonepic1.jpg" alt="Image 6">
-                      <h3 class="card-title">Capstone Project</h3>
-                      <a class="card-link" href="portfolio-item.html#project6">See More</a>
-                    </div>
-                </div>
-                <button class="projects_button"><a href="portfolio-item.html">View all Projects</a></button>
-            </div> 
-        </section>
-        
-        <!--Footer-->
-        <footer class="footer">
-            <h2>Contact Me</h2>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href=mailto:simisola_1@tamu.edu>
-                        <i class="fa-solid fa-envelope" style="font-size:60px"></i>
-                        <p class="contact-title">email me</p>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/simisola-agboola/">
-                        <i class="fa-brands fa-linkedin" style="font-size:60px"></i>
-                        <p class="contact-title">linkedin</p>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/SimisolaAgboola?tab=repositories">
-                        <i class="fab fa-github" style="font-size:60px"></i>
-                        <p class="contact-title">github</p>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-        <!--JavaScript Link-->
-        <script src="index.js"></script>
-    </body>
+    <div class="footer">© copyright Simisola Agboola</div>
+  </body>
 </html> 
