@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simi's website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> <!--normalixe, helps even out differences between browsers-->
+    <!--Fonts & Icons-->
+    <script src="https://kit.fontawesome.com/0cbeb7b28e.js" crossorigin="anonymous"></script>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="mediaqueries.css"> -->
+    <!--Favicon-->
+    <link rel="shortcut icon" href=""/>
+  </head>
+  
+  <body>
+    <!--navigation-->
+    <nav>
+      <div class="nav_content">
+        <div class="logo"><a href="index.html">Simisola</a></div>
+        <label for="check" class="checkbox">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul class="navlist">
+          <li class="navlistitem"><a href="about.html">About</a></li>
+          <li class="navlistitem"><a href="#">Resume</a></li>
+          <li class="navlistitem"><a href="#footer">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="project-main">
+        <div class="project-info">
+          <div class="video">
+            <h2>Demo</h2>
+            <video width="650" height="350" controls>
+              <source src="movie.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <h2>Tech Used</h2>
+          <p>Vue.js, node.js, express, google auth, mongodb, vercel</p>
+          <h2>What I created</h2>
+          <p>A full stack ecommerce website with a functional shopping cart where users can create accounts and login, and add items from the products page to their cart</p>
+          <h2>Lessons learned</h2>
+          <p>vue.js syntax such  as template & script, v-router & v-if</p>
+          <p>gogleauth methods including issigninwithemaillink, etc</p>
+          <p>axios for async fetching and updating of the database</p>
+          <p>connecting the frontend to the backend</p>
+          <h2>Ideas to make it better</h2>
+          <p>A favorites page so users can favorite products and view them later</p>
+          <p>add the same item to the cart more than once with the quantity displayed</p>
+          <h2>Links</h2>
+          <p>Github</p>
+          <p>Website link</p>
+        </div>
+        <div class="project-navigation">
+          <a href="project3.html" class="previous-project"><i class="fa-solid fa-angle-left"></i>Previous Project</a>
+        </div>
+        <div class="project-navigation">
+          <a href="project5.html" class="next-project">Next Project<i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer" id="footer">
+        <h4>Stay Connected</h4>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href=mailto:simisola_1@tamu.edu>simisola_1@tamu.edu</a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/simisola-agboola/">linkedin</a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/SimisolaAgboola?tab=repositories">github</a>
+            </li>
+        </ul>
+        <p>Made with &hearts; by Simisola Agboola &copy; 2023</p>
+    </footer>
+    <!--JavaScript Link-->
+    <script src="index.js"></script>
+    
+</body>
+</html>

@@ -37,3 +37,8 @@ footer */
     }
 }
 
+@media (max-width: 950px) {
+    .social-links {
+        display: none;
+    }
+}
