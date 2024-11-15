@@ -148,6 +148,9 @@ nav .checkbox i {
 
 .hire__me {
   background-color: purple;
+  /* color: #ffffff; */
+}
+.hire_me a{
   color: #ffffff;
 }
 
