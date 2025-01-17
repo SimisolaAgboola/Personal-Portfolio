@@ -18,7 +18,7 @@
     <!--navigation-->
     <nav>
       <div class="nav_content">
-        <div class="logo"><a href="index.html">Simisola</a></div>
+        <div class="logo"><a href="index.html">Simisola<i class="fa-solid fa-signature"></i></a></div>
         <label for="check" class="checkbox">
           <i class="fa-solid fa-bars"></i>
         </label>
@@ -26,7 +26,6 @@
         <ul class="navlist">
           <li class="navlistitem"><a href="about.html">About</a></li>
           <li class="navlistitem"><a href="#">Resume</a></li>
-          <li class="navlistitem"><a href="#footer">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -34,35 +33,40 @@
     <main>
       <section class="project-main">
         <div class="project-info">
-          <div class="video">
-            <h2>Demo</h2>
+          <h2 class="project_title">Resume Parser</h2>
+          <!-- <div class="video">
             <video width="650" height="350" controls>
               <source src="movie.mp4" type="video/mp4">
               <source src="movie.ogg" type="video/ogg">
               Your browser does not support the video tag.
             </video>
+          </div> -->
+          <div style="width: 650px; height: 350px; display: flex; align-items: center; justify-content: center; background-color: gainsboro; color: black; font-size: 28px; font-family: Arial, sans-serif; border: 1px solid #ccc;">
+            Coming Soon
           </div>
-          <h2>Tech Used</h2>
-          <p>python, flask, regex, beautifulsoup, nlp, data annotation</p>
+          <h2 class="first-heading">Tech Used</h2>
+          <p>Python, Flask, Custom Named Entity Recognition (NER) <a href="https://www.kaggle.com/datasets/dataturks/resume-entities-for-ner">Kaggle Dataset</a></p>
           <h2>What I created</h2>
-          <p>simple interface where user uploads a valid resume file format and website parses it and returns results of name, contact info, education & experience. Inspired by tiktoks seamless application interface</p>
+          <p>A simple interface where users upload a valid resume file format and the web app parses it and returns results of name, contact info, education & experience. Inspired by tiktok's seamless application interface.</p>
           <h2>Lessons learned</h2>
-          <p>how to annotate data for large language model training</p>
-          <p>how to load and train a new spacy model</p>
-          <p>how to dockerize a flask application</p>
-          <p>building a full stack application with flask</p>
+          <ul>
+            <li>Annotating data for large language model training</li>
+            <li>Loading and training a new spacy model</li>
+            <li>Validating a large json file's syntax</li>
+            <li>Building a full stack application with flask</li>
+            <li>Using AWS textract in code</li>
+          </ul>
           <h2>Ideas to make it better</h2>
-          <p>extract resume extras including links, extra curricular avicites, etc</p>
-          <p>use AI for parsing</p>
+          <ul>
+            <li>Extract resume extras including links, extra curricular avicites, etc</li>
+            <li>Use AI for parsing as this is the most acurate way to achieve seamless resume pasrsing to date</li>
+          </ul>
           <h2>Links</h2>
-          <p>Github</p>
-          <p>Website link</p>
+          <p>Github: <a href="https://github.com/SimisolaAgboola/resume-parser">check it out here</a></p>
+          <!-- <p>Website link: <a>coming soon</a></p> -->
         </div>
         <div class="project-navigation">
-          <a href="project2.html" class="previous-project"><i class="fa-solid fa-angle-left"></i>Previous Project</a>
-        </div>
-        <div class="project-navigation">
-          <a href="project4.html" class="next-project">Next Project<i class="fa-solid fa-angle-right"></i></a>
+          <a href="project1.html" class="previous-project"><i class="fa-solid fa-angle-left"></i>Previous Project</a>
         </div>
       </section>
     </main>

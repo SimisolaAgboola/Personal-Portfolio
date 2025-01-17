@@ -18,7 +18,7 @@
     <!--navigation-->
     <nav>
       <div class="nav_content">
-        <div class="logo"><a href="index.html">Simisola</a></div>
+        <div class="logo"><a href="index.html">Simisola<i class="fa-solid fa-signature"></i></a></div>
         <label for="check" class="checkbox">
           <i class="fa-solid fa-bars"></i>
         </label>
@@ -26,7 +26,6 @@
         <ul class="navlist">
           <li class="navlistitem"><a href="about.html">About</a></li>
           <li class="navlistitem"><a href="#">Resume</a></li>
-          <li class="navlistitem"><a href="#footer">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -34,34 +33,36 @@
     <main>
       <section class="project-main">
         <div class="project-info">
+          <h2 class="project_title">Customizable Food Dispenser</h2>
           <div class="video">
-            <h2>Demo</h2>
             <video width="650" height="350" controls>
-              <source src="movie.mp4" type="video/mp4">
-              <source src="movie.ogg" type="video/ogg">
+              <source src="assets/img/capstone_video.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
-          <h2>Tech Used</h2>
-          <p>Vue.js, node.js, express, google auth, mongodb, vercel</p>
-          <h2>What I created</h2>
-          <p>A full stack ecommerce website with a functional shopping cart where users can create accounts and login, and add items from the products page to their cart</p>
+          <h2 class="first-heading">Tech Used</h2>
+          <p>Raspberry pi, FT90 continous rotation servo motors, custom 3d printed dispensing mechanism, python GUIZero, 7-inch touchscreen monitor, digital load cell + HX711, 12V power supply</p>
+          <h2>What we created</h2>
+          <p>A compact, customizable, user-friendly automatic food dispenser that can dispense up to 10 dry food products on demand</p>
           <h2>Lessons learned</h2>
-          <p>vue.js syntax such  as template & script, v-router & v-if</p>
-          <p>gogleauth methods including issigninwithemaillink, etc</p>
-          <p>axios for async fetching and updating of the database</p>
-          <p>connecting the frontend to the backend</p>
+          <ul>
+            <li>Full system design and documentation including writing a needs statement, project goals,  objectives, evaluation of alternatives, design constraints & feasibility, system description and design validation </li>
+            <li>Testing a load cell sensor</li>
+            <li>Building and printing custom 3d parts</li>
+          </ul>
           <h2>Ideas to make it better</h2>
-          <p>A favorites page so users can favorite products and view them later</p>
-          <p>add the same item to the cart more than once with the quantity displayed</p>
+          <ul>
+            <li>A more accurate weight sensor for calculating how much food was dispensed so users can be accurately charged at a fixed cost per lb.</li>
+          </ul>
           <h2>Links</h2>
-          <p>Github</p>
-          <p>Website link</p>
-        </div>
-        <div class="project-navigation">
-          <a href="project5.html" class="previous-project"><i class="fa-solid fa-angle-left"></i>Previous Project</a>
+          <p>Please contact me for more information on this project</p>
         </div>
       </section>
+      <div class="project-navigation">
+        <a href="project5.html" class="previous-project"><i class="fa-solid fa-angle-left"></i>Previous Project</a>
+          <a href="project1.html" class="next-project">Next Project<i class="fa-solid fa-angle-right"></i></a>
+      </div>
+      
     </main>
     <!--Footer-->
     <footer class="footer" id="footer">

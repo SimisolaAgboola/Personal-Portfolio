@@ -18,7 +18,7 @@
     <!--navigation-->
     <nav>
       <div class="nav_content">
-        <div class="logo"><a href="#home">Simisola</a></div>
+        <div class="logo"><a href="#home">Simisola<i class="fa-solid fa-signature"></i></a></div>
         <label for="check" class="checkbox">
           <i class="fa-solid fa-bars"></i>
         </label>
@@ -33,23 +33,25 @@
 
 
     <!--Hero-->
-    <section class="hero"> <!--equivalent to class - section-->
-      <div class="wrapper"> <!--equivalent to class - section_container-->
-        <div class="hero-text"> <!--equivalent to class - content-->
+    <section class="hero"> 
+      <div class="wrapper"> 
+        <div class="hero-text"> 
           <h1 class="title">
             Hi there, I'm Simisola,<br>a <span class="highlight">software developer</span> 
             and <span class="highlight">data analyst</span>
           </h1>
           <p class="description">A driven problem-solver and passionate learner <i class="fa-solid fa-square-arrow-up-right"></i>
-          <br>BS Computer Engineering from Texas A&M <i class="fa-solid fa-square-arrow-up-right"></i></p>
+          <br>BS Computer Engineering from Texas A&M <i class="fa-solid fa-square-arrow-up-right"></i>
+          <br>People Leader @Amazon SLII trained <i class="fa-solid fa-square-arrow-up-right"></i></p>
           <div class="action__btns">
             <button class="hire__me"><a href="https://github.com/SimisolaAgboola?tab=repositories">Github</a></button>
             <button class="portfolio"><a href="https://www.linkedin.com/in/simisola-agboola/">Linkedin</a></button>
           </div>
         </div>
-        <div class="hero-img"> <!--equivalent to class image-->
+        <div class="hero-img"> 
           <img src="assets/img/girl.png" alt="Avatar">
-        </div> 
+        </div>
+        <div class="down-arrow"></div> 
       </div>
     </section>
 
@@ -57,19 +59,7 @@
     <section class="portfolio-item" id="work">
       <h1 class="heading"><span>Featured Work</span></h1>
 
-      <div class="project-container">
-        <!--Project 1-->
-        <div class="column">
-          <a href="project1.html" class="card">
-            <img src="assets/img/dinnertabletalk.png" alt="">
-          </a>
-          <div class="card-text">
-            <a class="project-title" href="project1.html"><h3>AI News Summarization App</h3></a>
-            <span class="project-tools">React News ApI, chatgpt API Vercel</span>
-            <p>Fetches the latest sports, entertainment and politics news and summarizes it using AI</p> 
-          </div>
-        </div>
-        
+      <div class="project-container">        
         <div class="column">
           <div class="card">
             <a href="project2.html"><img src="assets/img/fullstacksitepic3.png" alt=""></a>
@@ -83,34 +73,23 @@
         
         <div class="column">
           <div class="card">
-            <a href="project3.html"><img src="assets/img/resumeparser.png" alt=""></a>
-          </div>
-          <div class="card-text">
-            <a class="project-title" href="project3.html"><h3>Resume Parser</h3></a>
-            <span class="project-tools">Python Beautiful Soup AWS textract & S3 Regex Spacy Azure Docker</span>
-            <p>Lets users upload a resume and extracts their relevant information</p>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card">
-            <a href="project4.html"><img src="assets/img/tictactoepic3.png" alt=""></a>
+            <a href="project4.html"><img src="assets/img/twoplayertictactoe.png" alt=""></a>
           </div>
           <div class="card-text">
             <a class="project-title" href="project4.html"><h3>2 Player Tic Tac Toe</h3></a>
-            <span class="project-tools">Python Beautiful Soup AWS textract & S3 Regex Spacy Azure Docker</span>
+            <span class="project-tools">React Socket.io</span>
             <p>A React tictactoe game that creates a session for 2 players to compete against each other</p>
           </div>
         </div>
 
         <div class="column">
           <div class="card">
-            <a href="project5.html"><img src="assets/img/quppic1.jpg" alt=""></a>
+            <a href="project5.html"><img src="assets/img/chromeestensionpic.png" alt=""></a>
           </div>
           <div class="card-text">
-            <a class="project-title" href="project5.html"><h3>Collaborative Youtube Platform</h3></a>
-            <span class="project-tools">AWS python Python Beautiful Soup</span>
-            <p>Users can host YouTube watch party sessions and invite their friends and everyone can add to the queue</p>
+            <a class="project-title" href="project5.html"><h3>Google Chrome Reading Extension</h3></a>
+            <span class="project-tools">Javascript Google Chrome Developer Tools</span>
+            <p>Highlights the 1st letter of every word on a web page for easier and faster reading</p>
           </div>
         </div>
 
@@ -120,10 +99,33 @@
           </div>
           <div class="card-text">
             <a class="project-title" href="project6.html"><h3>Automatic Food Dispenser (Senior Capstone)</h3></a>
-            <span class="project-tools">React Session.io Mp3.js</span>
+            <span class="project-tools">Raspberry pi FT90 Servo Motors Python GUIZero</span>
             <p>Dispenses food automatically when you place an order on the touch screen GUI using brilliant techniques</p>
           </div>
         </div>
+
+        <div class="column">
+          <a href="project1.html" class="card">
+            <img src="assets/img/dinnertabletalk.png" alt="">
+          </a>
+          <div class="card-text">
+            <a class="project-title" href="project1.html"><h3>AI News Summarization App (In Progress)</h3></a>
+            <span class="project-tools">React News ApI Hugging Face bart-large-cnn</span>
+            <p>Fetches the latest sports, entertainment and politics news and summarizes it using AI</p> 
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <a href="project3.html"><img src="assets/img/resumeparser.png" alt=""></a>
+          </div>
+          <div class="card-text">
+            <a class="project-title" href="project3.html"><h3>Resume Parser (In Progress)</h3></a>
+            <span class="project-tools">Python Flask AWS Textract Spacy NER Kaggle Dataset</span>
+            <p>Lets users upload a resume and extracts their relevant information</p>
+          </div>
+        </div>
+        
       </div>                                                                                                                      
     </section>
 

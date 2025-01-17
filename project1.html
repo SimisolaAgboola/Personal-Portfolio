@@ -18,7 +18,7 @@
     <!--navigation-->
     <nav>
       <div class="nav_content">
-        <div class="logo"><a href="index.html">Simisola</a></div>
+        <div class="logo"><a href="index.html">Simisola<i class="fa-solid fa-signature"></i></a></div>
         <label for="check" class="checkbox">
           <i class="fa-solid fa-bars"></i>
         </label>
@@ -26,7 +26,6 @@
         <ul class="navlist">
           <li class="navlistitem"><a href="about.html">About</a></li>
           <li class="navlistitem"><a href="#">Resume</a></li>
-          <li class="navlistitem"><a href="#footer">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -34,31 +33,39 @@
     <main>
       <section class="project-main">
         <div class="project-info">
+          <h2 class="project_title">AI News Summarization App</h2>
           <div class="video">
-            <h2>Demo</h2>
             <video width="650" height="350" controls>
-              <source src="movie.mp4" type="video/mp4">
-              <source src="movie.ogg" type="video/ogg">
+              <source src="assets/img/newssummarizationappvid.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
-          <h2>Tech Used</h2>
-          <p>React, Newsapi, bert-extractive-summarizer</p>
+          <h2 class="first-heading">Tech Used</h2>
+          <p>ReactJS Slick Carousel Node.js Express.js Axios NewsAPI, Gpt-4o OpenAI Api</p>
           <h2>What I created</h2>
-          <p>A webapp that fetches and displays the latest news in sports, entertainment and politics and summarizes them using a bert AI summarizer.</p>
+          <p>A web app that fetches and displays the latest news in sports, entertainment and politics and summarizes them using an AI summarizer.
+            This is intended to give users quick talking points they can use in any social interaction.
+          </p>
           <h2>Lessons learned</h2>
-          <p>using python and react in the same application</p>
-          <p>asynchronous api calls</p>
-          <p>using an ai summarization api</p>
+          <ul>
+            <li>Asynchronous API calls in ReactJS</li>
+            <li>Using an AI summarization API requires functionality and memory trade offs</li>
+            <li>Error handling API call responses</li>
+            <li>Managing complex application state efficiently to handle category-specific articles</li>
+            <li>Handling nested callback functions and promises while fetching, filtering, and summarizing news articles</li>
+            <li>Managing large files in github that exceed the file limit using git LFS</li>
+          </ul>
           <h2>Ideas to make it better</h2>
-          <p>specify the who, what, where & when of every news article using AI</p>
-          <p>using AI to identofy and present the most key information in the news article</p>
+          <ul>
+            <li>Further simplify the summary by specifying the who, what, where & when of every news article using AI</li>
+          </ul>
           <h2>Links</h2>
-          <p>Github</p>
-          <p>Website link</p>
+          <p>Github: <a href="https://github.com/SimisolaAgboola/DinnerTableTalkApp">check it out here</a></p>
+          <!-- <p>Website link: coming soon</p> -->
         </div>
         <div class="project-navigation">
-          <a class="next-project" href="project2.html">Next Project<i class="fa-solid fa-angle-right"></i></a>
+          <a href="project6.html" class="previous-project"><i class="fa-solid fa-angle-left"></i>Previous Project</a>
+          <a href="project3.html" class="next-project">Next Project<i class="fa-solid fa-angle-right"></i></a>
         </div>
       </section>
     </main>
