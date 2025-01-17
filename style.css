@@ -527,6 +527,31 @@ nav .checkbox i {
   color: purple;
 }
 
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 650px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  font-size: calc(1rem + 1vw);
+  font-weight: bold;
+  color: #333;
+  border: 2px dashed #ccc;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Optional: Add responsiveness for very small screens */
+@media (max-width: 400px) {
+  .coming-soon {
+    font-size: calc(0.8rem + 1vw); /* Adjust font size for smaller screens */
+  }
+}
+
+
 .video {
   width: 100%;
   background-color: gainsboro;
